@@ -135,7 +135,7 @@ section.effectVideo img.notebook{
   position: absolute;
   top: 150px;
   right: 60px;
-  z-index: 2;
+  z-index: 3;
   width: 530px;
 }
 
@@ -147,7 +147,7 @@ section.effectVideo img.efeito{
 
 section.effectVideo iframe.iframeyt {
   position: absolute;
-  left: 40px;
+  right: 120px;
   top:168px;
-  z-index: 3;
+  z-index: 2;
 }
