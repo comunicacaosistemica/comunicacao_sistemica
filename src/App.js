@@ -10,13 +10,13 @@ function App() {
         <header className='top'>
           <nav>
           <ul>
-            <li><a href='#'>Sobre</a></li>
-            <li><a href='#'>Ministrantes</a></li>
-            <li><a href='#'>Pacotes</a></li>
+            <li><a href='#1'>Sobre</a></li>
+            <li><a href='#1'>Ministrantes</a></li>
+            <li><a href='#1'>Pacotes</a></li>
             <button>Inscreva-se</button>
           </ul>
           </nav>
-          <section className='sectionHeader'>
+          <section className='sectionHeader' id='1'>
             <div className='title'>
             <h1>Junte-se a mais de 1.567 alunos que já comprovam a qualidade dos nossos cursos</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus.</p>
