@@ -30,7 +30,7 @@ function App() {
         </header>
         <section className='effectVideo'>
           <img src={notebook} alt='notebook' className='notebook'/>
-          <iframe width="405" height="240" src="https://www.youtube.com/embed/FDNNHh7TRN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className='iframeyt'></iframe>
+          <iframe width="409" height="244" src="https://www.youtube.com/embed/FDNNHh7TRN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className='iframeyt'></iframe>
           <img src={effect} alt='efeito' className='efeito'/>
         </section>
       </div>
