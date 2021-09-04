@@ -4,6 +4,11 @@ import udemy from './assets/Camada 3.png'
 import notebook from './assets/clay-MBP.png'
 import effect from './assets/Camada 1.png'
 import videoAula from './assets/Video Aulas.png'
+import suporte from './assets/Suporte.png'
+import aulasAoVivo from './assets/Aulas Ao vivo.png'
+import eBook from './assets/E-book.png'
+import relatorio from './assets/Relatorio.png'
+import certificado from './assets/Certificado.png'
 
 import Detalhe from './components/sobre'
 
@@ -44,11 +49,11 @@ function App() {
           <h1>Como é<br/>a estrutura do curso?</h1>
             <div className="detalhes">
               <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
-              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
-              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
-              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
-              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
-              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={suporte} alt="Suporte" title="Suporte" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={aulasAoVivo} alt="aulas ao vivo" title="Aulas Ao Vivo" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={eBook} alt="e-book" title="E-book" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={relatorio} alt="Questionario de Auto Avaliação" title="Questionário de Auta Avaliação" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={certificado} alt="certificado" title="Certificado" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
             </div>
           </div>
       </section>
