@@ -38,6 +38,12 @@
   font-family: Roboto;
   font-weight: 600;
   font-size: 16px;
+  transition: 0.1s;
+}
+
+.top ul li a:hover {
+  border-bottom: 3px solid rgba(145,214,249,1);
+  
 }
 
 .top ul button {
@@ -52,6 +58,13 @@
   font-weight: 600;
   cursor: pointer;
   margin-top: 7.5px;
+  transition: 0.3s;
+}
+
+.top ul button:hover {
+  color: white;
+  background-color: #9f66f7;
+  border: none;
 }
 
 /*Título e background*/
@@ -84,6 +97,7 @@
   font-weight: 500;
   line-height: 16px;
   font-family: Roboto;
+  color: #696b6c;
 }
 
 .sectionHeader .title button {
@@ -100,6 +114,11 @@
   font-weight: 500;
   font-size: 15px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.sectionHeader .title button:hover {
+  background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
 }
 
 /*Udemy logo*/
@@ -119,16 +138,22 @@
   font-size: 13px;
   font-family: Roboto;
   margin-right: 15px;
+  color: #949596;
+  font-weight: 600;
+  font-weight: 600;
 }
 
 /*Video no computador*/
 .flexInitial {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
 section.effectVideo {
   position: relative;
+  height: 100vh;
 }
 
 section.effectVideo img.notebook{
@@ -142,7 +167,7 @@ section.effectVideo img.notebook{
 section.effectVideo img.efeito{
   position: relative;
   z-index: 1;
-  height: 100vh;
+  height: 95vh;
 }
 
 section.effectVideo iframe.iframeyt {
@@ -150,4 +175,33 @@ section.effectVideo iframe.iframeyt {
   right: 121px;
   top:167px;
   z-index: 3;
+}
+
+/*segunda sessão*/
+
+.sectionSobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerSobre {
+  max-width: 1000px;
+}
+
+.sectionSobre h1 {
+  color: #9f66f7;
+  text-align: left;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.sectionSobre .detalhes {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

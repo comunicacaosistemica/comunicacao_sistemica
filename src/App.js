@@ -1,7 +1,12 @@
-import './App.css';
+import './App.css'
+
 import udemy from './assets/Camada 3.png'
 import notebook from './assets/clay-MBP.png'
 import effect from './assets/Camada 1.png'
+import videoAula from './assets/Video Aulas.png'
+
+import Detalhe from './components/sobre'
+
 
 function App() {
   return (
@@ -30,10 +35,23 @@ function App() {
         </header>
         <section className='effectVideo'>
           <img src={notebook} alt='notebook' className='notebook'/>
-          <iframe width="409" height="244" src="https://www.youtube.com/embed/FDNNHh7TRN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className='iframeyt'></iframe>
+          <iframe width="409" height="244" src="https://www.youtube.com/embed/FDNNHh7TRN0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowFullScreen className='iframeyt'></iframe>
           <img src={effect} alt='efeito' className='efeito'/>
         </section>
       </div>
+      <section className='sectionSobre'>
+        <div className='containerDetalhes'>
+          <h1>Como é<br/>a estrutura do curso?</h1>
+            <div className="detalhes">
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+              <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
+            </div>
+          </div>
+      </section>
     </div>
   );
 }
