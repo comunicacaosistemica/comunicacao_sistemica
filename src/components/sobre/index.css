@@ -7,7 +7,7 @@
 }
 
 .detalheContent img {
-    width: 100px;
+    width: 90px;
     margin-top: 15px;
 }
 
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 .description h3 {
