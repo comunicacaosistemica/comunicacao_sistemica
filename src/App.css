@@ -182,12 +182,11 @@ section.effectVideo iframe.iframeyt {
   justify-content: space-between;
   width: 100%;
   max-width: 1000px;
-  min-width: 800px;
+  min-width: 900px;
 }
 .containerAprender img{
   margin-top: 140px;
   width: 580px;
-  margin-left: 30px;
 }
 
 .containerAprender h1 {
