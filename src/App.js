@@ -1,14 +1,14 @@
 import './App.css'
 
-import udemy from './assets/Camada 3.png'
 import notebook from './assets/clay-MBP.png'
-import effect from './assets/Camada 1.png'
+import effect from './assets/ondas.png'
 import videoAula from './assets/Video Aulas.png'
 import suporte from './assets/Suporte.png'
 import aulasAoVivo from './assets/Aulas Ao vivo.png'
 import eBook from './assets/E-book.png'
 import relatorio from './assets/Relatorio.png'
 import certificado from './assets/Certificado.png'
+import aprender from './assets/aprender.jpg'
 
 import Detalhe from './components/sobre'
 
@@ -28,13 +28,11 @@ function App() {
           </nav>
           <section className='sectionHeader' id='1'>
             <div className='title'>
-            <h1>Junte-se a mais de 1.567 alunos que já comprovam a qualidade dos nossos cursos</h1>
+            <h1>Junte-se a mais de 1.567 alunos que já comprovaram a qualidade dos nossos cursos</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus.</p>
+            <div className='buttonPosition'>
             <button>Quero Começar Agora</button>
             </div>
-            <div className='udemy'>
-              <p>Inscreva-se em:</p>
-              <img src={udemy} alt='Udemy'/>
             </div>
           </section>
         </header>
@@ -44,6 +42,15 @@ function App() {
           <img src={effect} alt='efeito' className='efeito'/>
         </section>
       </div>
+      <section className='aprender'>
+        <div className='containerAprender'>
+          <img src={aprender} alt='O que Vou Aprender com Este Curso?' />
+          <div className='titleAprender'>
+          <h1>O que Vou Aprender com Este Curso?</h1>
+          <button>Clique Aqui e Descubra</button>
+          </div>  
+        </div>
+      </section>
       <section className='sectionSobre'>
         <div className='containerDetalhes'>
           <h1>Como é<br/>a estrutura do curso?</h1>

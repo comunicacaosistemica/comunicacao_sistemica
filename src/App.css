@@ -7,6 +7,7 @@
 .top {
   width: 100%;
   padding-left: 30px;
+  height: 800px;
 }
 .top nav {
   display: flex;
@@ -37,7 +38,7 @@
   color: #9f66f7;
   font-family: Roboto;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   transition: 0.1s;
 }
 
@@ -46,7 +47,7 @@
   
 }
 
-.top ul button {
+.top ul > button {
   background: none;
   width: 130px;
   height: 30px;
@@ -54,14 +55,14 @@
   border-color: #9f66f7;
   border-width: 2px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 7.5px;
   transition: 0.3s;
 }
 
-.top ul button:hover {
+.top ul > button:hover {
   color: white;
   background-color: #9f66f7;
   border: none;
@@ -70,49 +71,54 @@
 /*Título e background*/
 .sectionHeader {
   width: 100%;
+  height: 800px;
 }
 
 
  .sectionHeader .title {
-  width: 500px;
+  width:  470px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 450px;
+  height: 580px;
 }
 
 .sectionHeader .title h1 {
-  width: 260px;
+  width: 419px;
+  margin-top: 100px;
   color: #9f66f7;
-  font-size: 30px;
+  font-size: 44px;
   font-family: Roboto;
 }
 
 .sectionHeader .title p {
-  width: 260px;
+  width: 419px;
   margin-top: 30px;
-  font-size: 12px;
-  color: black;
+  font-size: 16.667px;
+  color: rgba(42, 44, 46, 0.702);
   font-weight: 500;
-  line-height: 16px;
+  line-height: 18px;
   font-family: Roboto;
   color: #696b6c;
 }
-
+.buttonPosition {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 419px;
+}
 .sectionHeader .title button {
-  width: 230px;
-  margin-top: 30px;
-  margin-right: 40px;
+  height: 70px;
   background: rgb(118,39,244);
   background: linear-gradient(90deg, rgba(118,39,244,1) 0%, rgba(145,214,249,1) 95%);
-  height: 47px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   color: white;
+  width: 310px;
+  margin-top: 55px;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 15px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -121,32 +127,11 @@
   background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
 }
 
-/*Udemy logo*/
-
-.udemy {
-  width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.udemy img{
-  width: 150px;
-}
-
-.udemy p {
-  font-size: 13px;
-  font-family: Roboto;
-  margin-right: 15px;
-  color: #949596;
-  font-weight: 600;
-  font-weight: 600;
-}
-
 /*Video no computador*/
 .flexInitial {
   display: flex;
-  max-width: 1200px;
+  max-width: 1280px;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -158,24 +143,86 @@ section.effectVideo {
 
 section.effectVideo img.notebook{
   position: absolute;
-  top: 150px;
-  right: 60px;
+  top: 180px;
+  right: 140px;
   z-index: 2;
   width: 530px;
 }
 
 section.effectVideo img.efeito{
   position: relative;
+  margin-top: -100px;
   z-index: 1;
-  height: 95vh;
+  height: 130vh;
+  max-height: 900px;
 }
 
 section.effectVideo iframe.iframeyt {
   position: absolute;
-  right: 121px;
-  top:167px;
+  right: 198px;
+  top:198px;
   z-index: 3;
 }
+
+/*sessão aprender */
+
+.aprender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 475px;
+  width: 100%;
+  background-color: #7030db;
+  z-index: -1;
+}
+
+.containerAprender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin-right: 200px;
+}
+.containerAprender img{
+  margin-top: 140px;
+  width: 580px;
+}
+
+.containerAprender h1 {
+  color: #91d6f9;
+  width: 345px;
+  font-family: Roboto;
+  font-size: 44px;
+}
+
+.containerAprender .titleAprender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.containerAprender .titleAprender button{
+  height: 60px;
+  border: 2px solid white;
+  background: none;
+  border-radius: 50px;
+  color: white;
+  width: 280px;
+  margin-top: 60px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.containerAprender .titleAprender button:hover {
+  color: #7030db;
+  background-color: white;
+}
+
 
 /*segunda sessão*/
 
@@ -183,6 +230,7 @@ section.effectVideo iframe.iframeyt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 }
 
 .containerSobre {
@@ -191,9 +239,9 @@ section.effectVideo iframe.iframeyt {
 
 .sectionSobre h1 {
   color: #9f66f7;
-  text-align: left;
+  text-align: right;
   font-size: 30px;
-  margin-left: 30px;
+  margin-right: 30px;
   margin-top: 20px;
   margin-bottom: 50px;
   font-family: Roboto;
@@ -205,4 +253,10 @@ section.effectVideo iframe.iframeyt {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-height: 800px) {
+  .sectionHeader .title h1 {
+    margin-top: 30px;
+  }
 }
