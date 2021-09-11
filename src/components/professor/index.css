@@ -1,0 +1,40 @@
+.professor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1040px;
+    
+}
+
+.professorDetail {
+    position: relative;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.professorDetail h3{
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 30px;   
+}
+
+.professorDetail p{
+    text-align: right;
+    color: #696b6c;
+    font-size: 15px;
+    max-width: 850px;
+
+}
+
+.professor .gradientEffect {
+    position: absolute;
+    background:rgba(246, 247, 249, 0.5);
+    background: linear-gradient(180deg, rgba(246,247,249,0.5) 0%, rgba(246,247,249,1) 80%);
+    width: 100%;
+    max-width: 850px;
+    height: 30px;
+    margin-top: -20px;
+}
+.professor img {
+    height: 260px;
+}

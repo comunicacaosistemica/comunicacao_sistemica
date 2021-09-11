@@ -9,8 +9,11 @@ import eBook from './assets/E-book.png'
 import relatorio from './assets/Relatorio.png'
 import certificado from './assets/Certificado.png'
 import aprender from './assets/aprender.jpg'
+import zeca from './assets/zeca.png'
 
+import Button from './components/button'
 import Detalhe from './components/sobre'
+import Professor from './components/professor'
 
 
 function App() {
@@ -31,7 +34,7 @@ function App() {
             <h1>Junte-se a mais de 1.567 alunos que já comprovaram a qualidade dos nossos cursos</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus.</p>
             <div className='buttonPosition'>
-            <button>Quero Começar Agora</button>
+           <Button link='https://youtube.com' content="Quero Começar Agora" />
             </div>
             </div>
           </section>
@@ -52,8 +55,8 @@ function App() {
         </div>
       </section>
       <section className='sectionSobre'>
+      <h1>Como é<br/>a estrutura do curso?</h1>
         <div className='containerDetalhes'>
-          <h1>Como é<br/>a estrutura do curso?</h1>
             <div className="detalhes">
               <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
               <Detalhe img={suporte} alt="Suporte" title="Suporte" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
@@ -62,7 +65,11 @@ function App() {
               <Detalhe img={relatorio} alt="Questionario de Auto Avaliação" title="Questionário de Auta Avaliação" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
               <Detalhe img={certificado} alt="certificado" title="Certificado" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus" />
             </div>
+            <Button link='https://youtube.com' content='Ver Ementa Completa' />
           </div>
+      </section>
+      <section className='sectionProfessor'>
+        <Professor name='Zeca Santos' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibusLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id pretium enim, eget convallis tellus. Mauris consequat dapibus' image={zeca} />
       </section>
     </div>
   );

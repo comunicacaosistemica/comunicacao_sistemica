@@ -1,0 +1,23 @@
+.buttonGradient {
+    height: 70px;
+    background: rgb(118,39,244);
+    background: linear-gradient(90deg, rgba(118,39,244,1) 0%, rgba(145,214,249,1) 95%);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    width: 310px;
+    margin-top: 55px;
+    font-family: Roboto;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttonGradient:hover {
+    background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
+  }
+  

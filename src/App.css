@@ -108,24 +108,6 @@
   justify-content: flex-start;
   width: 419px;
 }
-.sectionHeader .title button {
-  height: 70px;
-  background: rgb(118,39,244);
-  background: linear-gradient(90deg, rgba(118,39,244,1) 0%, rgba(145,214,249,1) 95%);
-  border: none;
-  border-radius: 50px;
-  color: white;
-  width: 310px;
-  margin-top: 55px;
-  font-family: Roboto;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.sectionHeader .title button:hover {
-  background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
-}
 
 /*Video no computador*/
 .flexInitial {
@@ -231,19 +213,28 @@ section.effectVideo iframe.iframeyt {
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .containerSobre {
   max-width: 1000px;
+}
+.containerDetalhes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sectionSobre h1 {
   color: #9f66f7;
   text-align: right;
   font-size: 30px;
-  margin-right: 30px;
+  margin-right: 45px;
   margin-top: 20px;
   margin-bottom: 50px;
+  width: 100%;
+  max-width: 1000px;
   font-family: Roboto;
 }
 
