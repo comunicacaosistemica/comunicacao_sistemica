@@ -13,6 +13,7 @@ import zeca from './assets/zeca.png'
 import glacia from './assets/glacia.png'
 import logo from './assets/sistemico-negativo.png'
 import notebook from './assets/notebook.png'
+import config from './assets/config.png'
 import video from './assets/comunicacaosistemica.mp4'
 
 import Button from './components/button'
@@ -114,6 +115,16 @@ function App() {
           </div>
         </div>
       </footer>
+      <section className='emConstrucao'>
+        <div className='emConstrucaoimg'>
+          <img className='logoMobile' src={logo} alt='logo' />
+          <img className='mobileNotebook'src={notebook} alt='notebook' />
+          <img className='mobileConfig' src={config} alt='configurações' />
+        </div>
+        <div className='emConstrucaoText'>
+          <h1>Em breve,<br/>um site repleto de autoconhecimento<br/>para você.<br/>Aguarde!</h1>
+        </div>
+      </section>
     </div>
   );
 }
