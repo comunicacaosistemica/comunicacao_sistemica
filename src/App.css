@@ -375,7 +375,9 @@ header {
   position: relative;
   width: 200px;
 }
-
+.emConstrucao {
+  display: none;
+}
 
 @media screen and (max-height: 800px) {
   .sectionHeader .title h1 {
