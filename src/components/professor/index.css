@@ -60,6 +60,7 @@
     max-width: 850px;
     height: 50px;
     margin-top: -40px;
+    display: none;
 }
 
 .professorReverse .gradientEffect {
@@ -70,6 +71,7 @@
     max-width: 850px;
     height: 50px;
     margin-top: -40px;
+    display: none;
 }
 
 .professor img {
@@ -81,14 +83,14 @@
 }
 
 .containerButtonProfessor {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 100%;
     max-width: 850px;
 }
 
 .containerButtonProfessorReverse {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     width: 100%;
     max-width: 850px;

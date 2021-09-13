@@ -3,147 +3,134 @@
 .App {
   background-color: #fff;
 }
-/*barra de navegação*/
-.top {
+
+/*header*/
+
+header {
+  position: fixed;
+  background-color: #7c27f4;
+  height: 140px;
   width: 100%;
-  padding-left: 30px;
-  height: 800px;
-}
-.top nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  min-width: 500px;
-  max-width: 600px;
-  height: 80px;
+  z-index: 5;
 }
-
-.top ul {
+.headerMargin {
+  height: 140px;
+}
+.containerHeader {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  width: 50%;
-  min-width: 450px;
-  max-width: 500px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1300px;
+}
+.containerHeader img {
+  width: 250px;
 }
 
-.top ul li {
+.containerHeader ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 420px;
+}
+
+.containerHeader ul li {
   list-style: none;
 }
 
-.top ul li a {
+.containerHeader ul li a {
   text-decoration: none;
-  color: #9f66f7;
-  font-family: Roboto;
-  font-weight: 600;
-  font-size: 18px;
-  transition: 0.1s;
-}
-
-.top ul li a:hover {
-  border-bottom: 3px solid rgba(145,214,249,1);
-  
-}
-
-.top ul > button {
-  background: none;
-  width: 130px;
-  height: 30px;
-  color: #9f66f7;
-  border-color: #9f66f7;
-  border-width: 2px;
-  border-radius: 20px;
-  font-size: 18px;
-  font-weight: 600;
   cursor: pointer;
-  margin-top: 7.5px;
-  transition: 0.3s;
-}
-
-.top ul > button:hover {
+  font-size: 18px;
+  font-weight: 500;
   color: white;
-  background-color: #9f66f7;
-  border: none;
 }
 
-/*Título e background*/
-.sectionHeader {
-  width: 100%;
-  height: 800px;
+.containerHeader ul li a:hover {
+  border-bottom: 3px solid #91d6f9;
 }
 
-
- .sectionHeader .title {
-  width:  470px;
+.containerHeader > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 580px;
+  border-radius: 50px;
+  width: 250px;
+  height: 60px;
+  background-color: #91d6f9;
+  transition: 0.2s;
 }
 
-.sectionHeader .title h1 {
-  width: 419px;
-  margin-top: 100px;
-  color: #9f66f7;
-  font-size: 44px;
-  font-family: Roboto;
+.containerHeader > a:hover {
+  background-color: white;
+  color: #91d6f9;
 }
 
-.sectionHeader .title p {
-  width: 419px;
-  margin-top: 30px;
-  font-size: 16.667px;
-  color: rgba(42, 44, 46, 0.702);
-  font-weight: 500;
-  line-height: 18px;
-  font-family: Roboto;
-  color: #696b6c;
-}
-.buttonPosition {
+/*sessão inicio*/
+
+.inicio {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 419px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/*Video no computador*/
-.flexInitial {
+.containerInicio {
   display: flex;
-  max-width: 1280px;
-  height: 100vh;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1300px;
 }
 
+.contentInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
 
-section.effectVideo {
+.contentInicio h1 {
+  color: #7c27f4;
+  width: 100%;
+  max-width: 400px;
+  text-align: right;
+  font-size: 32px;
+}
+
+.contentInicio p {
+  width: 100%;
+  max-width: 400px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+/*notebook e video*/
+.imgVideo {
   position: relative;
-  height: 100vh;
 }
 
-section.effectVideo img.notebook{
+.imgVideo img {
+  width: 750px;
+}
+
+.imgVideo video {
+  width: 480px;
+  height: 295px;
   position: absolute;
-  top: 180px;
-  right: 140px;
-  z-index: 2;
-  width: 530px;
-}
-
-section.effectVideo img.efeito{
-  position: relative;
-  margin-top: -100px;
-  z-index: 1;
-  height: 130vh;
-  max-height: 900px;
-}
-
-section.effectVideo iframe.iframeyt {
-  position: absolute;
-  right: 198px;
-  top:198px;
-  z-index: 3;
+  left: 148px;
+  top: 108px;
 }
 
 /*sessão aprender */
@@ -269,7 +256,7 @@ section.effectVideo iframe.iframeyt {
 .sectionCard {
   width: 100%;
   height: 550px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
