@@ -3,7 +3,14 @@
     align-items: center;
     justify-content: center;
     max-width: 1040px;
-    
+}
+
+.professorReverse {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1040px;
 }
 
 .professorDetail {
@@ -12,17 +19,36 @@
     font-weight: 500;
 }
 
+.professorDetailReverse {
+    position: relative;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
 .professorDetail h3{
     text-align: right;
     margin-top: 20px;
-    margin-bottom: 30px;   
+    margin-bottom: 20px;   
 }
 
-.professorDetail p{
+.professorDetailReserce h3 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.professorDetail p {
     text-align: right;
     color: #696b6c;
     font-size: 15px;
     max-width: 850px;
+}
+
+.professorDetailReverse p {
+    text-align: left;
+    color: #696b6c;
+    font-size: 15px;
+    max-width: 850px;
+    margin-top: 20px;
 
 }
 
@@ -32,9 +58,79 @@
     background: linear-gradient(180deg, rgba(246,247,249,0.5) 0%, rgba(246,247,249,1) 80%);
     width: 100%;
     max-width: 850px;
-    height: 30px;
-    margin-top: -20px;
+    height: 50px;
+    margin-top: -40px;
 }
+
+.professorReverse .gradientEffect {
+    position: absolute;
+    background:rgba(246, 247, 249, 0.5);
+    background: linear-gradient(180deg, rgba(246,247,249,0.5) 0%, rgba(246,247,249,1) 80%);
+    width: 100%;
+    max-width: 850px;
+    height: 50px;
+    margin-top: -40px;
+}
+
 .professor img {
-    height: 260px;
+    height: 290px;
+}
+
+.professorReverse img {
+    height: 290px;
+}
+
+.containerButtonProfessor {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 850px;
+}
+
+.containerButtonProfessorReverse {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 850px;
+}
+
+.containerButtonProfessor a{
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 35px;
+    width: 140px;
+    transition: 0.2s;
+}
+.containerButtonProfessorReverse a{
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 35px;
+    width: 140px;
+    transition: 0.2s;
+}
+
+.containerButtonProfessor a:hover{
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.containerButtonProfessorReverse a:hover{
+    color: white;
+    background-color: black;
+    border: none;
 }

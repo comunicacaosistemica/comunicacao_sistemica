@@ -246,6 +246,133 @@ section.effectVideo iframe.iframeyt {
   flex-wrap: wrap;
 }
 
+/*professores */
+
+.sectionProfessor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background:rgba(246, 247, 249);
+
+  width: 100%;
+}
+
+.boxProfessor {
+  display: flex;
+  flex-direction: column;
+}
+
+/*sessão card*/
+
+.sectionCard {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(145,214,249,1) 0%, rgba(118,39,244,1) 95%);
+}
+
+.boxSectionCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1280px;
+}
+
+.contentSectionCard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.contentSectionCard h1 {
+  color: white;
+  width: 400px;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.contentSectionCard p {
+  text-align: left;
+  max-width: 640px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sectionFooter {
+  height: 400px;
+  background-image: url('./assets/ondasfooter.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 400px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.footerDuvida {
+  color: #696b6c;
+  font-size: 16px;
+}
+
+.footerDuvida h3{
+  color: black;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.footerDuvidaP {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footerWhatsapp {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+
+
+.footerWhatsapp p {
+  width: 200px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footerWhatsapp a {
+  font-weight: 500;
+ width: 250px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #7e7f80;
+ text-decoration: none;
+ height: 70px;
+ border: 2px solid #7e7f80;
+ border-radius: 50px;
+ margin-top: 20px;
+ transition: 0.2s;
+}
+
+.footerWhatsapp a:hover {
+  background-color: #7e7f80;
+  color: white;
+  border: none;
+}
+
+
 @media screen and (max-height: 800px) {
   .sectionHeader .title h1 {
     margin-top: 30px;

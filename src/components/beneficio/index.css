@@ -1,0 +1,13 @@
+.beneficio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+    margin: 5px;
+}
+
+.beneficio p {
+    color: #696b6c;
+    font-size: 20px;
+    font-weight: 500;
+}
