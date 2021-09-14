@@ -33,10 +33,10 @@ function App() {
           <img src={logo} alt='logo' />
 
           <ul>
-            <li><Link to='sobre' smooth={true}>Sobre</Link></li>
-            <li><Link to='professor' smooth={true}>Ministrantes</Link></li>
-            <li><Link>Investimento</Link></li>
-            <li><Link to='faq' smooth={true}>FAQ</Link></li>
+            <li><Link to='sobre' smooth={true} offset={-110}>Sobre</Link></li>
+            <li><Link to='professor' smooth={true} offset={-110}>Ministrantes</Link></li>
+            <li><Link >Investimento</Link></li>
+            <li><Link to='faq' smooth={true} offset={-110}>FAQ</Link></li>
           </ul>
           <a href='https://comunicacaosistenuca.com.br'>Inscreva-se</a>
         </div>
@@ -107,11 +107,11 @@ function App() {
           <div className='footerDuvida'>
             <h3>Dúvidas?</h3>
             <p className='footerDuvidaP'>Envie-nos um e-mail pelo endereço</p>
-            <p>suporte@comunicacaosistemica.com.br</p>
+            <p>comunicacaosistemicaoficial@gmail.com</p>
           </div>
           <div className='footerWhatsapp' id='faq'>
             <p>Ou entre em contato pelo Whatsapp</p>
-            <a href='https://youtube.com' target='blank'>Entrar em Contato</a>
+            <a href='https://api.whatsapp.com/send?phone=5584988775828' target='blank'>Entrar em Contato</a>
           </div>
         </div>
       </footer>

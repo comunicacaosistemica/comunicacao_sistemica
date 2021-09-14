@@ -410,6 +410,7 @@ header {
     display: none;
   }
 
+  /*em construção mobile*/
   .emConstrucao {
     width: 100%;
     display: flex;
@@ -453,6 +454,4 @@ header {
     margin-left: -50px;
     color: #7c27f4;
   }
-
-
 }
