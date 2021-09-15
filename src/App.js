@@ -28,13 +28,16 @@ import Beneficio from './components/beneficio'
 
 function App() {
   const [classes, setClasses]=useState('popupAprender hiddenPopup')
+  const [classesBackground, setClassesBackground] = useState('hiddenBackground')
 
   function hiddenClass() {
    setClasses('popupAprender hiddenPopup')
+   setClassesBackground('backgroundEscuro hiddenBackground')
   }
 
   function showClass() {
     setClasses('popupAprender')
+    setClassesBackground('backgroundEscuro')
   }
 
   return (
@@ -48,9 +51,10 @@ function App() {
             <li><Link >Investimento</Link></li>
             <li><Link to='faq' smooth={true} offset={-110}>FAQ</Link></li>
           </ul>
-          <a href='http://ead.esmarn.tjrn.jus.br/course/index.php'>Inscreva-se</a>
+          <a href='http://ead.esmarn.tjrn.jus.br/course/index.php' target='blank'>Inscreva-se</a>
         </div>
       </header>
+      <div className={`${classesBackground}`}></div>
       <div className='headerMargin'></div>
       <section className='inicio'>
         <div className='containerInicio'>
@@ -84,7 +88,7 @@ function App() {
           <ul>
             <div className='numbered'><p>1</p><li>Práticas de Atenção Plena (Mindfulness) para melhorar o manejo das minhas emoções e sentimentos, além de ter mais clareza e autonomia na minha comunicação. </li></div>
             <div className='numbered'><p>2</p><li>Transformar meu “eu crítico” e “julgador”, em um “eu” mais gentil, compassivo e empático, ampliando minha autocompaixão.</li></div>
-            <div className='numbered'><p>3</p><li>onhecer e praticar os 04 passos da Comunicação Não Violenta-CNV, entendendo minhas reais necessidades a partir de quem eu realmente sou e não do que os outros querem que eu seja.</li></div>
+            <div className='numbered'><p>3</p><li>Conhecer e praticar os 04 passos da Comunicação Não Violenta-CNV, entendendo minhas reais necessidades a partir de quem eu realmente sou e não do que os outros querem que eu seja.</li></div>
             <div className='numbered'><p>4</p><li>Saber dizer não com amorosidade, me libertar de comparações e da necessidade de estar no controle de tudo.</li></div>
             <div className='numbered'><p>5</p><li>Lidar com temas difíceis e iniciar conversas desafiantes.</li></div>
             <div className='numbered'><p>6</p><li>Identificar as intenções que estão “por trás” daquilo que o outro quis dizer, escutando para além de minhas projeções.</li></div>
