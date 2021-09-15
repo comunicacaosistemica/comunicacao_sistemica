@@ -75,7 +75,7 @@ function App() {
           <ButtonWhite content='Clique e Descubra' onClicar={showClass}/>
           </div>
           <section className={`${classes}`}>
-            <div onClick= {()=>hiddenClass()}>
+            <div className='closed' onClick= {()=>hiddenClass()}>
             <span className='rotate1'></span>
             <span></span>
             </div>

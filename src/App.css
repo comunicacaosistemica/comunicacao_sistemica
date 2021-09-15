@@ -407,6 +407,10 @@ header {
   transform: rotate(45deg);
 }
 
+.closed {
+  cursor: pointer;
+}
+
 .hiddenPopup {
   right: -60%;
 }
