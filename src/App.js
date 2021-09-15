@@ -84,7 +84,7 @@ function App() {
             <span></span>
             </div>
         <div className='containerPopupAprender'>
-          <h1>O QUE VOU APRENDER</h1>
+          <h1>O que vou aprender</h1>
           <ul>
             <div className='numbered'><p>1</p><li>Práticas de Atenção Plena (Mindfulness) para melhorar o manejo das minhas emoções e sentimentos, além de ter mais clareza e autonomia na minha comunicação. </li></div>
             <div className='numbered'><p>2</p><li>Transformar meu “eu crítico” e “julgador”, em um “eu” mais gentil, compassivo e empático, ampliando minha autocompaixão.</li></div>
