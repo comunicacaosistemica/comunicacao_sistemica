@@ -1,6 +1,7 @@
 import './App.css'
 
 import {Link} from 'react-scroll'
+import { useState } from 'react'
 
 import videoAula from './assets/Video Aulas.png'
 import suporte from './assets/Suporte.png'
@@ -26,19 +27,28 @@ import Beneficio from './components/beneficio'
 
 
 function App() {
+  const [classes, setClasses]=useState('popupAprender hiddenPopup')
+
+  function hiddenClass() {
+   setClasses('popupAprender hiddenPopup')
+  }
+
+  function showClass() {
+    setClasses('popupAprender')
+  }
+
   return (
     <div className="App">
       <header>
         <div className='containerHeader'>
           <img src={logo} alt='logo' />
-
           <ul>
             <li><Link to='sobre' smooth={true} offset={-110}>Sobre</Link></li>
             <li><Link to='professor' smooth={true} offset={-110}>Ministrantes</Link></li>
             <li><Link >Investimento</Link></li>
             <li><Link to='faq' smooth={true} offset={-110}>FAQ</Link></li>
           </ul>
-          <a href='https://comunicacaosistenuca.com.br'>Inscreva-se</a>
+          <a href='http://ead.esmarn.tjrn.jus.br/course/index.php'>Inscreva-se</a>
         </div>
       </header>
       <div className='headerMargin'></div>
@@ -62,8 +72,26 @@ function App() {
           <img src={aprender} alt='O que Vou Aprender com Este Curso?' />
           <div className='titleAprender'>
           <h1>O que Vou Aprender com Este Curso?</h1>
-          <ButtonWhite link='https://comunicacaosistemica.com.br' content='Clique e Descubra' />
-          </div>  
+          <ButtonWhite content='Clique e Descubra' onClicar={showClass}/>
+          </div>
+          <section className={`${classes}`}>
+            <div onClick= {()=>hiddenClass()}>
+            <span className='rotate1'></span>
+            <span></span>
+            </div>
+        <div className='containerPopupAprender'>
+          <h1>O QUE VOU APRENDER</h1>
+          <ul>
+            <div className='numbered'><p>1</p><li>Práticas de Atenção Plena (Mindfulness) para melhorar o manejo das minhas emoções e sentimentos, além de ter mais clareza e autonomia na minha comunicação. </li></div>
+            <div className='numbered'><p>2</p><li>Transformar meu “eu crítico” e “julgador”, em um “eu” mais gentil, compassivo e empático, ampliando minha autocompaixão.</li></div>
+            <div className='numbered'><p>3</p><li>onhecer e praticar os 04 passos da Comunicação Não Violenta-CNV, entendendo minhas reais necessidades a partir de quem eu realmente sou e não do que os outros querem que eu seja.</li></div>
+            <div className='numbered'><p>4</p><li>Saber dizer não com amorosidade, me libertar de comparações e da necessidade de estar no controle de tudo.</li></div>
+            <div className='numbered'><p>5</p><li>Lidar com temas difíceis e iniciar conversas desafiantes.</li></div>
+            <div className='numbered'><p>6</p><li>Identificar as intenções que estão “por trás” daquilo que o outro quis dizer, escutando para além de minhas projeções.</li></div>
+            <div className='numbered'><p>7</p><li>Entender através da Constelação Familiar, as leis sistêmicas, as dinâmicas familiares e o contexto do lugar de fala de cada pessoa, sem exclusões, nem julgamentos</li></div>
+          </ul>
+        </div>
+      </section>  
         </div>
       </section>
       <section className='sectionSobre'>

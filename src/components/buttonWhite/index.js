@@ -1,7 +1,7 @@
 import './index.css'
 
-export default function ButtonWhite({link, content}){
+export default function ButtonWhite({content, onClicar}){
 return(
-    <a className='buttonWhite' href={link}>{content}</a>
+    <button className='buttonWhite' onClick={()=>onClicar()}>{content}</button>
     );
 }

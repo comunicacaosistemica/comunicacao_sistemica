@@ -136,13 +136,13 @@ header {
 /*sessão aprender */
 
 .aprender {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 475px;
   width: 100%;
   background-color: #7030db;
-  z-index: -1;
 }
 
 .containerAprender {
@@ -377,6 +377,82 @@ header {
 }
 .emConstrucao {
   display: none;
+}
+
+/*popup aprender*/
+.popupAprender {
+  position: absolute;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+  top: -75px;
+  right: 0;
+  z-index: 6;
+  transition: 0.2s;
+}
+
+.popupAprender span{
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 12px;
+  background: #7e7f80;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+.hiddenPopup {
+  right: -60%;
+}
+
+.popupAprender span.rotate1 {
+  transform: rotate(-45deg);
+}
+
+.containerPopupAprender h1 {
+  color: #7c27f4;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.containerPopupAprender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.containerPopupAprender div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.containerPopupAprender div p {
+  margin-right: 30px;
+  font-size: 45px;
+  font-weight: 800;
+  background: linear-gradient(180deg, rgba(118,39,244,1) 0%, rgba(145,214,249,1) 80%);
+  background-clip: text;
+  color: transparent;
+}
+
+.containerPopupAprender ul li {
+  font-size: 15px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.containerPopupAprender ol li::before {
+  font-size: 20px;
 }
 
 @media screen and (max-height: 800px) {
