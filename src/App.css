@@ -512,15 +512,16 @@ header {
 }
 
 .containerEmenta::-webkit-scrollbar {
-  width: 0px;
+  width: 8px;
 }
 
 .containerEmenta::-webkit-scrollbar-track {
-  background: none;
+  background: white;
 }
 
 .containerEmenta::-webkit-scrollbar-thumb {
-  background-color: none;
+  background-color: #7e7f8059;
+  border-radius: 3px;
 
 }
 
