@@ -467,6 +467,64 @@ header {
   display: none;
 }
 
+/*popup Ementa*/
+.ementa {
+  position: fixed;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  transition: 0.2s;
+}
+
+.containerEmenta .closedEmenta span{
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 12px;
+  background: #7e7f80;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+.containerEmenta .closedEmenta span.rotate1 {
+  transform: rotate(-45deg);
+}
+.closedEmenta {
+  cursor: pointer;
+}
+
+.hiddenEmenta {
+  right: -60%;
+}
+
+.containerEmenta {
+  position: relative;
+  overflow-y: scroll;
+}
+
+.containerEmenta::-webkit-scrollbar {
+  width: 8px;
+}
+
+.containerEmenta::-webkit-scrollbar-track {
+  background: white;
+}
+
+.containerEmenta::-webkit-scrollbar-thumb {
+  background-color: #7e7f8060;
+  border-radius: 3px;
+  border: none;
+}
+
 
 @media screen and (max-height: 800px) {
   .sectionHeader .title h1 {

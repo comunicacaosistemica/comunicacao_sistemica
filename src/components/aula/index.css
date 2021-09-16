@@ -1,0 +1,19 @@
+.aulaComponent {
+    display: flex;
+    
+}
+
+.aulaComponent .topicAula {
+    font-size: 20px;
+    color: #7c27f4;
+    font-weight: 600;
+    width: 80px;
+}
+
+.aulaComponent .contentAula {
+    color: #696b6c;
+    font-size: 18px;
+    margin-left: 20px;
+    max-width: 420px;
+    font-weight: 500;
+}

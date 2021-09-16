@@ -1,0 +1,36 @@
+.moduloComponent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 150px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.positionChildren {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+.titleModuloComponent span {
+    display: block;
+    width: 42px;
+    height: 20px;
+    background: #91d6f9;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.titleModuloComponent h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.titleModuloComponent {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}

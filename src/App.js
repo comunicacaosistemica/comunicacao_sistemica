@@ -23,12 +23,15 @@ import Professor from './components/professor'
 import ButtonWhite from './components/buttonWhite'
 import Card from './components/card'
 import Beneficio from './components/beneficio'
+import Modulo from './components/modulo'
+import Aula from './components/aula'
 
 
 
 function App() {
   const [classes, setClasses]=useState('popupAprender hiddenPopup')
   const [classesBackground, setClassesBackground] = useState('hiddenBackground')
+  const [classesEmenta, setClassesEmenta] = useState('hiddenEmenta')
 
   function hiddenClass() {
    setClasses('popupAprender hiddenPopup')
@@ -38,6 +41,16 @@ function App() {
   function showClass() {
     setClasses('popupAprender')
     setClassesBackground('backgroundEscuro')
+  }
+
+  function showPopupEmenta(){
+    setClassesEmenta('ementa')
+    setClassesBackground('backgroundEscuro')
+  }
+
+  function hiddenPopupEmenta(){
+    setClassesEmenta('ementa hiddenEmenta')
+    setClassesBackground('backgroundEscuro hiddenBackground')
   }
 
   return (
@@ -109,7 +122,7 @@ function App() {
               <Detalhe img={relatorio} alt="Questionario de Auto Avaliação" title="Questionário de Auto Avaliação" description="Ao final de cada módulo, o aluno poderá se auto avaliar, bem como, observar as melhorias em sua vida diária." />
               <Detalhe img={certificado} alt="certificado" title="Certificado" description="Será certificado pela ESMARN- Escola da Magistratura do RN, o qual servirá para progressão funcional do servidor. " />
             </div>
-            <Button link='https://comunicacaosistemica.com.br' content='Ver Ementa Completa' />
+            <Button show={showPopupEmenta} content='Ver Ementa Completa' />
           </div>
       </section>
       <section className='sectionProfessor' id='professor'>
@@ -155,6 +168,36 @@ function App() {
         </div>
         <div className='emConstrucaoText'>
           <h1>Em breve,<br/>um site repleto de autoconhecimento<br/>para você.<br/>Aguarde!</h1>
+        </div>
+      </section>
+      <section className={`${classesEmenta}`} onBlur={()=> hiddenPopupEmenta()}>
+        <div className='containerEmenta'>
+          <div className='closedEmenta' onClick={()=> hiddenPopupEmenta()}><span></span><span className='rotate1'></span></div>
+            <Modulo title='Modulo 01 - Orientações Gerais'>
+                <Aula aula='Aula 01' content='Conhecendo os instrutores' />
+                <Aula aula='Aula 02' content='Estrutura do curso (módulos, duração, aulas ao vivo, atividades avaliativas, plataforma, suporte)' />
+            </Modulo>
+            <Modulo title='Módulo 02 - Comunicação e Mindfulness (Atenção plena)'>
+                <Aula aula='Aula 03' content='Atenção Plena (Mindfullness) para o dia a dia: primeiros passos, benefícios, desafios, mitos e verdades.' />
+                <Aula aula='Aula 04' content='Desligando O Piloto Automático'/>
+                <Aula aula='Aula 05' content='Prática 01: Auto Centramento (04 Minutos)'/>
+                <Aula aula='Aula 06' content='Prática 02: Exercício de Respiração (08 Minutos)'/>
+                <Aula aula='Aula 07' content='Prática 03: Meditação do amor universal (10 minutos)'/>
+                <Aula aula='Aula 08' content='Prática 04: Escaneamento Corporal (12 minutos)'/>
+            </Modulo>
+            <Modulo title='Módulo 03 – Comunicação Não Violenta & Linguagem.'>
+              <Aula aula='Aula 09' content='Introdução à Comunicação: contextualização histórica, comunicação x Linguagem'/>
+              <Aula aula='Aula 10' content='Os Axiomas da Comunicação'/>
+              <Aula aula='Aula 11' content='A Comunicação Não Violenta - CNV (conceitos, contextualização e referências).'/>
+              <Aula aula='Aula 12' content='Os quatro passos da CNV: Observação, Sentimentos, Necessidades e Pedidos.'/>
+              <Aula aula='Aula 13' content='A Comunicação Não Violenta e os desafios das mídias socias na atualidade.'/>
+            </Modulo>
+            <Modulo title='Módulo 04 – Comunicação Sistêmica'>
+              <Aula aula='Aula 14' content='Introdução à prática da Comunicação Sistêmica (conceitos, contextualização, referências)'/>
+              <Aula aula='Aula 15' content='A Constelação familiar.'/>
+              <Aula aula='Aula 16' content='As leis do amor e as ordens da ajuda.'/>
+              <Aula aula='Aula 17' content='As práticas sistêmicas como possível caminho para atuação dos profissionais jurídicos'/>            
+            </Modulo>
         </div>
       </section>
     </div>

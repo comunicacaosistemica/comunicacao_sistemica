@@ -1,7 +1,7 @@
 import './index.css'
 
-export default function Button({link, content}){
+export default function Button({link, content, show}){
     return(
-        <a target='blank' className='buttonGradient' href={link}>{content}</a>
+        <button className='buttonGradient' onClick={() => show()}>{content}</button>
     )
 }
