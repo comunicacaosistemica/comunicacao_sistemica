@@ -172,7 +172,7 @@ function App() {
           <img className='mobileConfig' src={config} alt='configurações' />
         </div>
         <div className='emConstrucaoText'>
-          <h1>Em breve,<br/>um site repleto de autoconhecimento<br/>para você.<br/>Aguarde!</h1>
+          <h1>Por enquanto,<br/>estamos disponíveis<br/>apenas para<br/>desktop</h1>
         </div>
       </section>
       <section className={`${classesEmenta}`}>
