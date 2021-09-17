@@ -32,6 +32,7 @@ function App() {
   const [classes, setClasses]=useState('popupAprender hiddenPopup')
   const [classesBackground, setClassesBackground] = useState('hiddenBackground')
   const [classesEmenta, setClassesEmenta] = useState('hiddenEmenta')
+  const [classesContainerEmenta, setClassesContainerEmenta] = useState('hiddenContainerEmenta')
 
   function hiddenClass() {
    setClasses('popupAprender hiddenPopup')
@@ -46,17 +47,20 @@ function App() {
   function showPopupEmenta(){
     setClassesEmenta('ementa')
     setClassesBackground('backgroundEscuro')
+    setClassesContainerEmenta('containerEmenta')
   }
 
   function hiddenPopupEmenta(){
     setClassesEmenta('ementa hiddenEmenta')
     setClassesBackground('backgroundEscuro hiddenBackground')
+    setClassesContainerEmenta('hiddenContainerEmenta')
   }
 
   return (
     <div className="App">
       <header>
         <div className='containerHeader'>
+          <div className='containerImgNav'>
           <img src={logo} alt='logo' />
           <ul>
             <li><Link to='sobre' smooth={true} offset={-110}>Sobre</Link></li>
@@ -64,7 +68,8 @@ function App() {
             <li><Link >Investimento</Link></li>
             <li><Link to='faq' smooth={true} offset={-110}>FAQ</Link></li>
           </ul>
-          <a href='http://ead.esmarn.tjrn.jus.br/course/index.php' target='blank'>Inscreva-se</a>
+          </div>
+          <a href='http://ead.esmarn.tjrn.jus.br/course/index.php' target='blank'>Inscreva-se Já!</a>
         </div>
       </header>
       <div className={`${classesBackground}`}></div>
@@ -72,8 +77,8 @@ function App() {
       <section className='inicio'>
         <div className='containerInicio'>
           <div className='contentInicio'>
-            <h1>Comunicar ao outro quem Verdadeiramente somos<br/>é um ato de Coragem, Profunda Aceitação,<br/>e Auto Amor!</h1>
-            <p>A Comunicação Sistêmica revela a origem dos nossos conflitos, encoraja a expressar nossos sentimentos e necessidades, aprimora nossos relacionamentos, e nos impulsiona a estabelecer do uma conexão profunda, sincera e amorosa conosco e com o outro.</p>
+            <h1>Comunicar ao outro quem Verdadeiramente somos<br/>é um ato de Coragem, Profunda Aceitação,<br/>e Auto Amor.</h1>
+            <p>A Comunicação Sistêmica revela a origem dos nossos conflitos, encoraja a expressar nossos sentimentos e necessidades, aprimora nossos relacionamentos, e nos impulsiona a estabelecer do uma conexão profunda,<br/> sincera e amorosa conosco e com o outro.</p>
             <Button content='Quero me Inscrever Já' link='https://comunicacaosistemica.com.br'/>
           </div>
           <div className='imgVideo'>
@@ -127,8 +132,8 @@ function App() {
       </section>
       <section className='sectionProfessor' id='professor'>
         <div className='boxProfessor'>
-          <Professor name='Zeca Santos' description='Com mais de 20 anos atuando como jornalista profissional em renomadas empresas, Glácia Marillac também é escritora, consultora, palestrante, terapeuta familiar, psicanalista e especialista em Estratégias de Comunicação digital. Sempre muito dedicada a tudo o que faz, já realizou trabalhos em diferentes áreas e organizações e ganhou importantes prêmios.  Ao perceber que existia um gap na amorosidade da Comunicação entre as pessoas, Glácia viu que a união da Comunicação Não Violenta e da Constelação Familiar, poderia ser uma estratégica solução. Foi quando conversou com o Especialista em CNV Zeca Santos que também estava debruçado sobre as mesmas questões, o qual sugeriu a inclusão do Mindfullness, para potencializar ainda mais a força resolutiva da Comunicação Sistêmica.' image={zeca} />
-          <Professor name='Glacia Marilac' description='Zeca Santos é advogado, ator, cantor, palestrante e pesquisador da ciência do bem-estar. Há 23 anos atuando como servidor do judiciário, sempre uniu seus conhecimentos técnicos com as práticas de autodesenvolvimento humano. Pós-graduado em Psicologia Organizacional e do Trabalho, é especialista em Comunicação Não Violenta e Pós-graduando em Neurociências, psicologia positiva e Mindfullness. Também possui Especialização em Teatro Musical na Royal Scottish Academy of Music -Escócia e está concluindo seu mestrado em Direção de Recursos Humanos pela UCES-Argentina.' image={glacia} reverse={true}/>
+          <Professor name='Zeca Santos' description='Zeca Santos é advogado, ator, cantor, palestrante e pesquisador da ciência do bem-estar. Há 23 anos atuando como servidor do judiciário, sempre uniu seus conhecimentos técnicos com as práticas de autodesenvolvimento humano. Pós-graduado em Psicologia Organizacional e do Trabalho, é especialista em Comunicação Não Violenta e Pós-graduando em Neurociências, psicologia positiva e Mindfullness. Também possui Especialização em Teatro Musical na Royal Scottish Academy of Music -Escócia e está concluindo seu mestrado em Direção de Recursos Humanos pela UCES-Argentina.' image={zeca} />
+          <Professor name='Glacia Marilac' description='Com mais de 20 anos atuando como jornalista profissional em renomadas empresas, Glácia Marillac também é escritora, consultora, palestrante, terapeuta familiar, psicanalista e especialista em Estratégias de Comunicação digital. Sempre muito dedicada a tudo o que faz, já realizou trabalhos em diferentes áreas e organizações e ganhou importantes prêmios.  Ao perceber que existia um gap na amorosidade da Comunicação entre as pessoas, Glácia viu que a união da Comunicação Não Violenta e da Constelação Familiar, poderia ser uma estratégica solução. Foi quando conversou com o Especialista em CNV Zeca Santos que também estava debruçado sobre as mesmas questões, o qual sugeriu a inclusão do Mindfullness, para potencializar ainda mais a força resolutiva da Comunicação Sistêmica.' image={glacia} reverse={true}/>
         </div>
       </section>
       <section className='sectionCard'>
@@ -170,8 +175,8 @@ function App() {
           <h1>Em breve,<br/>um site repleto de autoconhecimento<br/>para você.<br/>Aguarde!</h1>
         </div>
       </section>
-      <section className={`${classesEmenta}`} onBlur={()=> hiddenPopupEmenta()}>
-        <div className='containerEmenta'>
+      <section className={`${classesEmenta}`}>
+        <div className={`${classesContainerEmenta}`}>
           <div className='closedEmenta' onClick={()=> hiddenPopupEmenta()}><span></span><span className='rotate1'></span></div>
             <Modulo title='Modulo 01 - Orientações Gerais'>
                 <Aula aula='Aula 01' content='Conhecendo os instrutores' />

@@ -21,16 +21,17 @@
 }
 
 .description h3 {
-    font-family: Roboto;
+    font-family: 'Nunito';
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     color: black;
 }
 
 .description p {
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: 'Nunito';
+    font-weight: 700;
     font-size: 13px;
+    font-weight: 18px;
     color: #696b6c;
 }
