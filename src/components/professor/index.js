@@ -3,7 +3,7 @@ import './index.css'
 export default function Professor({name, description, image, reverse}){
 
     let classes = {prof: 'professor', profDetail: 'professorDetail', containerButton: 'containerButtonProfessor'}
-    if(reverse) classes = {prof: 'professorReverse', profDetail: 'professorDetailReverse', containerButton: 'containerButtonProfessorReverse'}
+    if(reverse) classes = {prof: 'professorReverse', profDetail: 'professorDetailReverce', containerButton: 'containerButtonProfessorReverse'}
     return(
     <div className={classes.prof}>
         <div className={classes.profDetail}>

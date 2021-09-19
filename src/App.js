@@ -79,7 +79,7 @@ function App() {
           <div className='contentInicio'>
             <h1>Comunicar ao outro quem Verdadeiramente somos<br/>é um ato de Coragem, Profunda Aceitação,<br/>e Auto Amor.</h1>
             <p>A Comunicação Sistêmica revela a origem dos nossos conflitos, encoraja a expressar nossos sentimentos e necessidades, aprimora nossos relacionamentos, e nos impulsiona a estabelecer do uma conexão profunda,<br/> sincera e amorosa conosco e com o outro.</p>
-            <Button content='Quero me Inscrever Já' link='https://comunicacaosistemica.com.br'/>
+            <Button content='Quero me Inscrever Já' link='http://ead.esmarn.tjrn.jus.br/course/index.php'/>
           </div>
           <div className='imgVideo'>
             <img src={notebook} alt='notebook' />
@@ -94,7 +94,7 @@ function App() {
           <img src={aprender} alt='O que Vou Aprender com Este Curso?' />
           <div className='titleAprender'>
           <h1>O que Vou Aprender com Este Curso?</h1>
-          <ButtonWhite content='Clique e Descubra' onClicar={showClass}/>
+          <ButtonWhite content='Clique Aqui e Descubra' onClicar={showClass}/>
           </div>
           <section className={`${classes}`}>
             <div className='closed' onClick= {()=>hiddenClass()}>
@@ -104,13 +104,13 @@ function App() {
         <div className='containerPopupAprender'>
           <h1>O que vou aprender</h1>
           <ul>
-            <div className='numbered'><p>1</p><li>Práticas de Atenção Plena (Mindfulness) para melhorar o manejo das minhas emoções e sentimentos, além de ter mais clareza e autonomia na minha comunicação. </li></div>
-            <div className='numbered'><p>2</p><li>Transformar meu “eu crítico” e “julgador”, em um “eu” mais gentil, compassivo e empático, ampliando minha autocompaixão.</li></div>
-            <div className='numbered'><p>3</p><li>Conhecer e praticar os 04 passos da Comunicação Não Violenta-CNV, entendendo minhas reais necessidades a partir de quem eu realmente sou e não do que os outros querem que eu seja.</li></div>
-            <div className='numbered'><p>4</p><li>Saber dizer não com amorosidade, me libertar de comparações e da necessidade de estar no controle de tudo.</li></div>
-            <div className='numbered'><p>5</p><li>Lidar com temas difíceis e iniciar conversas desafiantes.</li></div>
-            <div className='numbered'><p>6</p><li>Identificar as intenções que estão “por trás” daquilo que o outro quis dizer, escutando para além de minhas projeções.</li></div>
-            <div className='numbered'><p>7</p><li>Entender através da Constelação Familiar, as leis sistêmicas, as dinâmicas familiares e o contexto do lugar de fala de cada pessoa, sem exclusões, nem julgamentos</li></div>
+            <div className='numbered'><p>1.</p><li>Práticas de Atenção Plena (Mindfulness) para melhorar o manejo das minhas emoções e sentimentos, além de ter mais clareza e autonomia na minha comunicação. </li></div>
+            <div className='numbered'><p>2.</p><li>Transformar meu “eu crítico” e “julgador”, em um “eu” mais gentil, compassivo e empático, ampliando minha autocompaixão.</li></div>
+            <div className='numbered'><p>3.</p><li>Conhecer e praticar os 04 passos da Comunicação Não Violenta-CNV, entendendo minhas reais necessidades a partir de quem eu realmente sou e não do que os outros querem que eu seja.</li></div>
+            <div className='numbered'><p>4.</p><li>Saber dizer não com amorosidade, me libertar de comparações e da necessidade de estar no controle de tudo.</li></div>
+            <div className='numbered'><p>5.</p><li>Lidar com temas difíceis e iniciar conversas desafiantes.</li></div>
+            <div className='numbered'><p>6.</p><li>Identificar as intenções que estão “por trás” daquilo que o outro quis dizer, escutando para além de minhas projeções.</li></div>
+            <div className='numbered'><p>7.</p><li>Entender através da Constelação Familiar, as leis sistêmicas, as dinâmicas familiares e o contexto do lugar de fala de cada pessoa, sem exclusões, nem julgamentos</li></div>
           </ul>
         </div>
       </section>  
