@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 150px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     margin-top: 30px;
 }
 
@@ -28,9 +28,11 @@
 .titleModuloComponent h1 {
     font-size: 22px;
     font-weight: bold;
+    width: 450px;
+    height: 30px;
 }
 .titleModuloComponent {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
 }

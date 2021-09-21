@@ -233,7 +233,7 @@ header {
   color: #9f66f7;
   text-align: right;
   font-size: 30px;
-  margin-right: 45px;
+  margin-right: 165px;
   margin-top: 20px;
   margin-bottom: 50px;
   width: 100%;
@@ -308,9 +308,10 @@ header {
 }
 
 .sectionFooter {
-  height: 300px;
+  height: 340px;
   background-image: url('./assets/ondasfooter.png');
   background-repeat: no-repeat;
+  background-position: 0 -30px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -334,12 +335,13 @@ header {
 .footerDuvida h3{
   color: black;
   margin-bottom: 5px;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .footerDuvidaP {
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -352,12 +354,13 @@ header {
 
 .footerWhatsapp p {
   width: 200px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
+  line-height: 22px;
 }
 
 .footerWhatsapp a {
-  font-weight: 600;
+  font-weight: 700;
  width: 250px;
  display: flex;
  align-items: center;
@@ -372,7 +375,7 @@ header {
 }
 
 .footerWhatsapp a:hover {
-  background-color: #7e7f80;
+  background-color: black;
   color: white;
   border: none;
 }
@@ -400,7 +403,7 @@ header {
 /*popup aprender*/
 .popupAprender {
   position: fixed;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,9 +452,11 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 80%;
+  width: 94%;
   max-width: 800px;
   margin-bottom: 15px;
+  margin-right: -80px;
+  max-width: 630px;
 }
 
 .containerPopupAprender div {
@@ -475,11 +480,12 @@ header {
   font-family: 'Nunito';
   font-weight: 700;
   list-style: none;
+  width: 75%;
 }
 
 .backgroundEscuro {
   position: fixed;
-  width: 40%;
+  width: 50%;
   height: 100vh;
   z-index: 6;
   background: rgb(55, 55, 55, 0.6);
@@ -492,7 +498,7 @@ header {
 /*popup Ementa*/
 .ementa {
   position: fixed;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -536,6 +542,7 @@ header {
 .containerEmenta {
   position: relative;
   overflow-y: scroll;
+  width: 100%;
 }
 
 .containerEmenta::-webkit-scrollbar {

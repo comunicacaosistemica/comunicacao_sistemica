@@ -93,7 +93,7 @@ function App() {
         <div className='containerAprender'>
           <img src={aprender} alt='O que Vou Aprender com Este Curso?' />
           <div className='titleAprender'>
-          <h1>O que Vou Aprender com Este Curso?</h1>
+          <h1>O Que Vou Aprender com Este Curso?</h1>
           <ButtonWhite content='Clique Aqui e Descubra' onClicar={showClass}/>
           </div>
           <section className={`${classes}`}>
@@ -117,14 +117,14 @@ function App() {
         </div>
       </section>
       <section className='sectionSobre'>
-      <h1>Como é<br/>a estrutura do curso?</h1>
+      <h1>Como é<br/>a Estrutura do Curso?</h1>
         <div className='containerDetalhes'>
             <div className="detalhes">
               <Detalhe img={videoAula} alt="Video aula" title="Videoaula" description="Serão 40 horas, divididas em 04 módulos disponibilizados semanalmente, com conteúdo ágil, consistente e de fácil entendimento." />
               <Detalhe img={suporte} alt="Suporte" title="Suporte" description="Será ciado um grupo de WhatsApp para dúvidas, sugestões, além do aluno poder se comunicar diretamente com os instrutores." />
               <Detalhe img={aulasAoVivo} alt="aulas ao vivo" title="Aulas Ao Vivo" description="Aprofundamento dos conhecimentos e atividades práticas para integrar conhecimento e prática." />
               <Detalhe img={eBook} alt="e-book" title="E-book" description="Será disponibilizado ao longo do curso com o referencial teórico-prático necessário à aplicação da Comunicação Sistêmica." />
-              <Detalhe img={relatorio} alt="Questionario de Auto Avaliação" title="Questionário de Auto Avaliação" description="Ao final de cada módulo, o aluno poderá se auto avaliar, bem como, observar as melhorias em sua vida diária." />
+              <Detalhe img={relatorio} alt="Questionario de Auto Avaliação" title="Questionário de Auto Avaliação" description="Ao final de cada módulo, o aluno poderá se auto avaliar, bem como, observar as melhorias em sua vida diária." width={70}/>
               <Detalhe img={certificado} alt="certificado" title="Certificado" description="Será certificado pela ESMARN- Escola da Magistratura do RN, o qual servirá para progressão funcional do servidor. " />
             </div>
             <Button show={showPopupEmenta} content='Ver Ementa Completa' />
