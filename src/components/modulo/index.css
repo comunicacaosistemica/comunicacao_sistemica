@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 150px;
+    padding-left: 100px;
     margin-bottom: 40px;
     margin-top: 30px;
 }
@@ -32,7 +32,7 @@
     height: 30px;
 }
 .titleModuloComponent {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }

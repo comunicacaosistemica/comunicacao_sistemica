@@ -177,12 +177,13 @@ function App() {
       </section>
       <section className={`${classesEmenta}`}>
         <div className={`${classesContainerEmenta}`}>
+        <h1>Ementa do Curso</h1>
           <div className='closedEmenta' onClick={()=> hiddenPopupEmenta()}><span></span><span className='rotate1'></span></div>
             <Modulo title='Modulo 01 - Orientações Gerais'>
                 <Aula aula='Aula 01' content='Conhecendo os instrutores' />
                 <Aula aula='Aula 02' content='Estrutura do curso (módulos, duração, aulas ao vivo, atividades avaliativas, plataforma, suporte)' />
             </Modulo>
-            <Modulo title='Módulo 02 - Comunicação e Mindfulness (Atenção plena)'>
+            <Modulo title='Módulo 02 - Comunicação e Mindfulness (Atenção plena)' bottom='42px'>
                 <Aula aula='Aula 03' content='Atenção Plena (Mindfullness) para o dia a dia: primeiros passos, benefícios, desafios, mitos e verdades.' />
                 <Aula aula='Aula 04' content='Desligando O Piloto Automático'/>
                 <Aula aula='Aula 05' content='Prática 01: Auto Centramento (04 Minutos)'/>
@@ -190,7 +191,7 @@ function App() {
                 <Aula aula='Aula 07' content='Prática 03: Meditação do amor universal (10 minutos)'/>
                 <Aula aula='Aula 08' content='Prática 04: Escaneamento Corporal (12 minutos)'/>
             </Modulo>
-            <Modulo title='Módulo 03 – Comunicação Não Violenta & Linguagem.'>
+            <Modulo title='Módulo 03 – Comunicação Não Violenta & Linguagem.' bottom='42px'>
               <Aula aula='Aula 09' content='Introdução à Comunicação: contextualização histórica, comunicação x Linguagem'/>
               <Aula aula='Aula 10' content='Os Axiomas da Comunicação'/>
               <Aula aula='Aula 11' content='A Comunicação Não Violenta - CNV (conceitos, contextualização e referências).'/>
